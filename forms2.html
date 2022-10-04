@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP</title>
+</head>
+<body>
+    <h1 align="center">Naukri Signup</h1>
+    <!-- <iframe src="media.html" width="100%" height="100%"></iframe> -->
+    <form method="get" name="signup">
+        <table align="center" cellspacing="10px" cellpadding="10px">
+            <tbody>
+                <tr>
+                    <td>
+                        <label>Firstname</label>
+                        <input type="text" readonly name="first" placeholder="firstname please" />
+                    </td>
+                    <td>
+                        <label>Lastname</label>
+                        <input type="text" name="last" placeholder="lastname please" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email id to login</label>
+                        <input type="email" name="mail" placeholder="email please" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter the contact number</label>
+                        <input type="tel" name="mobile" placeholder="mobile number please" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password</label>
+                        <input type="password" name="pass" placeholder="password here" />
+                    </td>
+                    <td>
+                        <label>Confirm Password</label>
+                        <input type="password" name="conpass" placeholder="confirm password here" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Date of birth</label>
+                        <input type="date" name="dob" placeholder="date of birth please"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select skills</label>
+                        <select name="skills" multiple required>
+                            <option>Select skills</option>
+                            <option>Java</option>
+                            <option>React</option>
+                            <option>MySQL</option>
+                            <option>MongoDB</option>
+                            <option>Python</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>Type of Employment</label>
+                        <input type="radio" name="employment" value="fulltime" />Full time
+                        <input type="radio" name="employment" value="parttime" />Part time
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Preferred locations</label>
+                        <input type="checkbox" name="city1" value="Chennai" />Chennai
+                        <input type="checkbox" name="city2" value="Banglore" />Banglore
+                        <input type="checkbox" name="city3" value="Hyberabad" />Hyderabad
+                        <input type="checkbox" name="city4" value="Noida" />Noida
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Upload your CV</label>
+                        <input type="file" name="upload" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Signup" /></td>
+                    <td><button>Cancel</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
